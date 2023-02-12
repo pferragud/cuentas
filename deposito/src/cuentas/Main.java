@@ -1,4 +1,4 @@
-package deposito;
+package cuentas;
 
  /**
  * Ejercio 04
