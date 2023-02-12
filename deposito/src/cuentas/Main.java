@@ -1,8 +1,8 @@
 package cuentas;
 
  /**
- * Ejercio 04
- * @author ferragud_vazquez_Patricio.
+ * Ejercio ED04
+ * @author ferragud_vazquez_patricio.
  */
 public class Main {
 

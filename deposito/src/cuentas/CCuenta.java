@@ -1,4 +1,9 @@
 package cuentas;
+
+/**
+* Ejercio ED04
+* @author ferragud_vazquez_patricio.
+*/
 public class CCuenta {
 
 
@@ -11,6 +16,13 @@ public class CCuenta {
     {
     }
 
+    /**
+     * Crea una instancia de Cuenta
+     * @param nom
+     * @param cue
+     * @param sal
+     * @param tipo
+     */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         setNombre(nom);
@@ -18,11 +30,20 @@ public class CCuenta {
         saldo=sal;
     }
 
+    /**
+     * Devuelve el saldo de la cuenta
+     * @return saldo
+     */
     public double estado()
     {
         return saldo;
     }
 
+    /**
+     * Ingresa un importe en cuenta
+     * @param cantidad
+     * @throws Exception
+     */
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
@@ -30,6 +51,11 @@ public class CCuenta {
         saldo = saldo + cantidad;
     }
 
+    /**
+     * Retira un importe de una cuenta
+     * @param cantidad
+     * @throws Exception
+     */
     public void retirar(double cantidad) throws Exception
     {
         if (cantidad <= 0)
