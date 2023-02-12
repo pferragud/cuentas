@@ -13,7 +13,7 @@ public class CCuenta {
 
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
-        nombre =nom;
+        setNombre(nom);
         cuenta=cue;
         saldo=sal;
     }
@@ -38,4 +38,36 @@ public class CCuenta {
             throw new Exception ("No se hay suficiente saldo");
         saldo = saldo - cantidad;
     }
+
+	String getNombre() {
+		return nombre;
+	}
+
+	void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	String getCuenta() {
+		return cuenta;
+	}
+
+	void setCuenta(String cuenta) {
+		this.cuenta = cuenta;
+	}
+
+	double getSaldo() {
+		return saldo;
+	}
+
+	void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	double getTipoInterés() {
+		return tipoInterés;
+	}
+
+	void setTipoInterés(double tipoInterés) {
+		this.tipoInterés = tipoInterés;
+	}	
 }
